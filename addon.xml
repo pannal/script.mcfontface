@@ -9,7 +9,7 @@
     <extension point="kodi.resource.font" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Add more fonts to Kodi</summary>
-		<description lang="en_GB">A script to add more sans-serif font alternatives to a Kodi installation</description>
+		<description lang="en_GB">A script to add fonts to a Kodi installation. Some sans-serif font alternatives included.</description>
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
 		<forum>https://forums.plex.tv/t/pm4k-plexmod-for-kodi-18-19-20-21-22</forum>
