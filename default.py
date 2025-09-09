@@ -12,6 +12,7 @@ from lib.common import ADDON, translatePath, log, showNotification, confirmation
 addon_folder = translatePath(os.path.join(ADDON.getAddonInfo('path')))
 target_folder = translatePath("special://home/media/Fonts")
 extra_folder = os.path.join(translatePath("special://profile/addon_data"), "fonts")
+our_folder = os.path.join(addon_folder, "resources")
 
 permission_issue = False
 
@@ -24,14 +25,14 @@ for folder in [target_folder, extra_folder]:
             pass
 
 log("Installing fonts to: {}", target_folder)
-log("Looking for fonts in: {}", [extra_folder, os.path.join(addon_folder, "resources")])
+log("Looking for fonts in: {}", [extra_folder, our_folder])
 
 # add userdata/addon_data/fonts/*
 extra_fonts = list(filter(fontFilter, os.listdir(extra_folder)))
 log("Fonts in extra folder: {}", len(extra_fonts))
 
 # add supplied fonts
-our_fonts = list(filter(fontFilter, os.listdir(os.path.join(addon_folder, "resources"))))
+our_fonts = list(filter(fontFilter, os.listdir(our_folder)))
 log("Fonts in plugin folder: {}", len(our_fonts))
 
 all_fonts = extra_fonts + our_fonts
@@ -53,7 +54,7 @@ if not confirmationDialog("Install fonts?", "About to install {} fonts to {}".fo
 fonts_installed = False
 log("Installing fonts: {}", install_fonts)
 for font in install_fonts:
-    base = extra_folder if os.path.exists(os.path.join(extra_folder, font)) else os.path.join(addon_folder, "resources")
+    base = extra_folder if os.path.exists(os.path.join(extra_folder, font)) else our_folder
     try:
         shutil.copyfile(os.path.join(base, font), os.path.join(target_folder, font))
     except:
