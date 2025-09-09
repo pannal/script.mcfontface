@@ -13,6 +13,6 @@ Dynamic Kodi fonts installer that ships with the following sans-serif fonts:
 
 When executed it installs missing fonts to `special://home/media/Fonts`.
 
-Custom fonts can be added by placing them inside `special://profile/addon_data/fonts` (folder will be created on first plugin run)
+Custom fonts (.ttf, .otf) can be added by placing them inside `special://profile/addon_data/fonts` (folder will be created on first plugin run)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z8X6P9T)
