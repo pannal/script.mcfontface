@@ -9,6 +9,8 @@ Dynamic Kodi fonts installer that ships with the following sans-serif fonts:
 - [Open Sans](https://fonts.google.com/specimen/Open+Sans?category=Sans+Serif)
 - [PT Sans](https://fonts.google.com/specimen/PT+Sans?category=Sans+Serif)
 - [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3?category=Sans+Serif)
+- [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans?category=Sans+Serif)
+- [Noto Sans Mono](https://fonts.google.com/noto/specimen/Noto+Sans+Mono?category=Sans+Serif)
 
 
 When executed it installs missing fonts to `special://home/media/Fonts` (usually `.kodi/media/Fonts`).
