@@ -5,6 +5,7 @@
 Dynamic Kodi fonts installer that ships with the following sans-serif fonts:
 - [Hind](https://fonts.google.com/specimen/Hind?category=Sans+Serif)
 - [Inter](https://fonts.google.com/specimen/Inter?category=Sans+Serif)
+- [Inter UI](https://fonts.google.com/specimen/Inter?category=Sans+Serif) (custom Inter with open 6 and 9, and fixed width numbers)
 - [Lato](https://fonts.google.com/specimen/Lato?category=Sans+Serif)
 - [Montserrat](https://fonts.google.com/specimen/Montserrat?category=Sans+Serif)
 - [Open Sans](https://fonts.google.com/specimen/Open+Sans?category=Sans+Serif)
@@ -21,5 +22,6 @@ Custom fonts (.ttf, .otf) can be added by placing them inside `special://profile
 > [!NOTE]
 > When not explicitly supported by your current Kodi skin, those fonts will only be available as subtitle fonts.
 
+The plugin has context menu items for advanced execution as well as a global cleanup setting, that cleans up the Kodi fonts folder before installation.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z8X6P9T)
