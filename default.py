@@ -8,18 +8,19 @@ from kodi_six import xbmc, xbmcgui, xbmcvfs, xbmcaddon
 
 from lib.common import ADDON, translatePath, log, showNotification, confirmationDialog, fontFilter
 
-# check for existing fonts
+# setup paths
 addon_folder = translatePath(os.path.join(ADDON.getAddonInfo('path')))
 target_folder = translatePath("special://home/media/Fonts")
 extra_folder = os.path.join(translatePath("special://profile/addon_data"), "fonts")
 our_folder = os.path.join(addon_folder, "resources")
 
+# parse settings, args
 cleanup = ADDON.getSetting('cleanup') == "true" or "only_cleanup" in sys.argv or "cleanup_install" in sys.argv
 install = "only_cleanup" not in sys.argv or "cleanup_install" in sys.argv
 
 permission_issue = False
 
-
+# cleanup action
 if cleanup and os.path.exists(target_folder):
     log("Cleanup set, clearing {}", target_folder)
     try:
@@ -28,7 +29,7 @@ if cleanup and os.path.exists(target_folder):
         showNotification("Couldn't install fonts. Possible permission issue on data folder.")
         sys.exit(0)
 
-
+# create target and custom folder
 for folder in [target_folder, extra_folder]:
     if not os.path.exists(folder):
         try:
@@ -43,6 +44,7 @@ if not install:
 log("Installing fonts to: {}", target_folder)
 log("Looking for fonts in: {}", [extra_folder, our_folder])
 
+# check for existing fonts
 # add userdata/addon_data/fonts/*
 extra_fonts = list(filter(fontFilter, os.listdir(extra_folder)))
 log("Fonts in extra folder: {}", len(extra_fonts))
