@@ -1,5 +1,6 @@
 # McFontFace
 
+[![mcfontface icon](icon.png)](#)
 
 Dynamic Kodi fonts installer that ships with the following sans-serif fonts:
 - [Hind](https://fonts.google.com/specimen/Hind?category=Sans+Serif)
