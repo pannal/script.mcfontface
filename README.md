@@ -1,4 +1,4 @@
-# Kodi Fonts
+# McFontFace
 
 
 Dynamic Kodi fonts installer that ships with the following sans-serif fonts:
