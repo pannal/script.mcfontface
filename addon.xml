@@ -30,7 +30,6 @@
 		<source>https://github.com/pannal/script.mcfontface/</source>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
 		</assets>
 		<news>- initial commit</news>
 	</extension>

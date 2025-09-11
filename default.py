@@ -4,8 +4,6 @@ import os
 import shutil
 import sys
 
-from kodi_six import xbmc, xbmcgui, xbmcvfs, xbmcaddon
-
 from lib.common import ADDON, translatePath, log, showNotification, confirmationDialog, fontFilter
 
 # setup paths
