@@ -25,3 +25,5 @@ Custom fonts (.ttf, .otf) can be added by placing them inside `special://profile
 The plugin has context menu items for advanced execution as well as a global cleanup setting, that cleans up the Kodi fonts folder before installation.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z8X6P9T)
+
+Helps: https://mutsuntsai.github.io/fontfreeze/
